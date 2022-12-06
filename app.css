@@ -1,0 +1,104 @@
+body {
+    background-color: #EEDE7A;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23c7b957' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.image{
+    margin-bottom: 2rem;
+}
+.container h3{
+    text-transform: uppercase;
+    color: rgb(25, 25, 25);
+    font-size: 2rem;
+}
+.container p{
+    color: #fff;
+}
+
+.deadline-format{
+    background-color: #000000;
+    border-radius: 10px;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+.emoji{
+    background: url("https://i.postimg.cc/LXJvR3qD/1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -120rem;
+    animation: movimiento 3s linear infinite;
+
+}
+
+.emoji:nth-child(1){
+    width: 5rem;
+    height: 5rem;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+.emoji:nth-child(2){
+    width: 7rem;
+    height: 7rem;
+    left: 50%;
+    animation-duration: 3s;
+    animation-delay: 3.5s;
+}
+.emoji:nth-child(3){
+    width: 3rem;
+    height: 3rem;
+    left: 70%;
+    animation-duration: 3s;
+ 
+}
+.emoji:nth-child(4){
+    width: 5rem;
+    height: 5rem;
+    left: 20%;
+    animation-duration: 3s;
+   
+}
+.emoji:nth-child(5){
+    width: 8rem;
+    height: 8rem;
+    left: 80%;
+    animation-duration: 2.3s;   
+}
+.emoji:nth-child(6){
+    width: 3rem;
+    height: 3rem;
+    left: 90%;
+    animation-duration: 1.3s;   
+}
+
+
+@keyframes movimiento{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+
+    30%{
+        transform: translateX(50px);
+    }
+    50%{
+        opacity: 0.9;
+        filter: brightness(110%);
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
